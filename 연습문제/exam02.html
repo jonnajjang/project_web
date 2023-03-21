@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학력 사항</title>
+    <style>
+        /* 부모요소에만 마진0auto를 넣는게 아니라 자식요소에도 넣어줘야 가운데정렬이 된다. */
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table, th,td{
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            padding: 10px 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        th{
+            background-color: #999;
+        }
+        td{
+            border: 1px dotted
+        }
+        caption{
+            /* 각 영역별로 top,right,bottom만 정해서 넓이를 조절할 수 있다. */
+            margin-bottom: 10px;
+            /* 시계방향으로 각 부위의 영역 넓이를 정한다. 굳이 탑,바텀 등의 영역을 정하지 않아도 된다. */
+            border: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <h2>Education</h2>
+        <table>
+           <caption>학력사항</caption>
+           <thead>
+              <tr>
+                   <th>출신학교</th>
+                  <th>전공</th>
+                   <th>기간</th>
+                 <th>구분</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                    <td>한강대학교</td>
+                    <td>소프트웨어학과</td>
+                    <td>2010.3~2016.2</td>
+                   <td>졸업</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

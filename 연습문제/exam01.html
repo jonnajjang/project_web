@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>표 만들기</title>
+        <style>
+            table{
+                border: 3px solid #ff0000;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            td{
+                /* dotted는 실선. */
+                border: 1px dotted #000000;
+                /* 패딩은 글씨 미포함 여백 간격 조정. 하이는 글씨 포함 여백간격 조정 */
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <caption>프로축구 경기 일정</caption>
+        <table>
+            <tr>
+                <td>울산</td>
+                <td>울산vs인천</td>
+            </tr>
+            <tr>
+                <!-- colspan은 '열'을 합치고, rowspan은 '행'을 합쳐준다. -->
+                <td rowspan="2">부산</td>
+                <td>부산vs대전</td>
+            </tr>
+            <tr>
+                <td>서울vs강원</td>
+            </tr>
+        </table>
+    </body>
+</html>

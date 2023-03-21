@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>widht-height 박스 모델</title>
+    <style>
+        /* 전체 선택자-*(별) */
+        /* 마징은 기본적으로 8px의 간격이 있다. 간격을 없애려면 직접 0px 입력.*/
+        /* margin-0px 0px 0px 0px=top, right,bottom, left(시계방향.) 바깥여백. */
+        /* margin은 겹치는 블럭과 높이가 중첩된다. 더 높은 값의 간격으로 벌어진다.
+         10px+30px=40px이 아니라, 가장 높은 값인 30px만큼만 벌어진다. */
+        *{
+            margin: 0px;
+        }
+        .box1{
+            width: 400px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background-color: orange;
+            margin: 10px 10px 10px 10px;
+        }
+        .box2{
+            width: 400px;
+            height: 100px;
+            border: 1px dotted olive;
+            background-color: aqua;
+            margin: 10px;
+        }
+        .box3{
+            width: 400px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: pink;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html

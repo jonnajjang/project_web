@@ -1,0 +1,18 @@
+h1{
+    color: #0000ff
+}
+p{
+    /* text-align: left; */
+    text-align: center;
+    /* text-align: justify; */
+    /* center 가운데 정렬/ justify 양쪽 정렬 */
+    line-height: 2;   
+}
+a{
+    text-decoration: none;
+}
+    /* 밑줄 없애는건 a태그 언급 후 가능. ul, li아님 */
+a:hover{
+    text-decoration: underline;
+}
+    /* a:hover마우스를 올렸을때 동작함 */

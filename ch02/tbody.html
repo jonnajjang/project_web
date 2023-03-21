@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        table, th, td{
+            border: 1px solid #444;
+            text-align: center;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+        /* 맨 윗줄 제목칸에 색넣는 코드 */
+        thead{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h2>the head, tbody, and tfoot elements(엘리먼트)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>월별</th>
+                <th>저축액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3월</td>
+                <td>50만원</td>
+            </tr>
+            <tr>
+                <td>4월</td>
+                <td>28만원</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td>78만원</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

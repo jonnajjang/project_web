@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응애</title>
+    <style>
+        *{margin: 0;}
+        .wrap{
+            width: 1200px;
+            height: 1000px;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+        div{
+            margin: 0 auto;
+        }
+        /* 부모요소와 자식요소를 쓸때 사이에 띄어쓰기를 하면 정해둔 굵기에 변화가 생긴다.
+            한번 띄어썼더니 간격이 2px에서 3px로 늘어났었다. */
+        div.box1{
+            width: 200px;
+            height: 100px;
+            border: solid #0000ff;
+            border-width: 2px;
+        }
+        .box2{
+            /* 2개의 px사이즈를 입력하면 top, right가 2px,5px입력 된 후
+             다시 돌아와서 bottom,left로 2px,5px이 입력된다.=2px 5px 2px 5px*/
+             width: 200px;
+            height: 100px;
+            border: solid #0000ff;
+             border-width: 2px 5px;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            border: solid #0000ff;
+            border-width: 2px 5px 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

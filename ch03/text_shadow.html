@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 그림자 효과</title>
+    <style>
+        h1{
+            font-size: 60px;
+        }
+        .text1{
+            color: rgb(255, 255, 255);
+            /* 가로 세로 순서로 입력된다.
+                텍스트 그림자에 마이너스를 넣으면 반대 방향으로 그림자가 진다. */
+            text-shadow: 5px -5px black;
+        }
+        .text2{
+            text-shadow: 0px 9px red;
+            /* 글자 간격 사이 조정하는 태그(자간) */
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text1">강력한 글씨</h1>
+    <h1 class="text2">강력한 글씨</h1>
+</body>
+</html>

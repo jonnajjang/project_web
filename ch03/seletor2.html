@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 우선순위</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "noto sans kr";
+            color: blue;
+        }
+        /* !important는 해당 태그를 강조함. 최강태그로 만들어주는 조력자. */
+        h1{
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: orange; font-family: 휴먼매직체;">졸리다</h1>
+        <!-- inline 스타일은 태그 스타일보다 우선순위가 높다. -->
+        <p style="color: black;">진짜 너무 졸리면 사람이 죽을 수 도 있겠구나 싶은 생각이 든다.</p>
+        <p>만화에서는 살 꼬집으면 정신차리던데 그건 존나 졸려보지 않은 사람의 망상이라 할 수 있는 행동이다.</p>
+        <p style="font-family: oswald;">hlpe me</p>
+    </div>
+</body>
+</html>
