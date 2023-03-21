@@ -1,0 +1,28 @@
+.wrap{
+    width: 1000px;
+}
+nav{
+    width: 800px;
+    text-align: right;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    /* inline사용 후 마진 값 적용이 안될경우 블록을 넣어서 적용이 되는지 확인해볼것. */
+    display: inline-block;
+    margin: 20px;
+    border-top:2px solid #333;
+    padding: 10px;
+}
+li:hover{
+    background-color: #eee;
+}
+a{
+    /* 버튼 글씨 아랫줄 없애는 코드. */
+    text-decoration: none;
+    color: black;
+}
+section{
+    padding-left: 500px;
+}
