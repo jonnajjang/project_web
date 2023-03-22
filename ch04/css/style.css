@@ -1,0 +1,7 @@
+#container{width: 1000px; margin: 0 auto; border:none}
+div{width: 700px;;border:1px solid #333; margin: 20px; padding: 20px;}
+/* border-위아래-왼오-radius: 모서리를 둥글게 만들 수 있다. */
+#description{border-top-left-radius:30px;border-top-right-radius:30px;}
+table,th,td{border:1px solid #ccc; border-collapse: collapse;}
+#package{border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+div.bg{width: 500px; height: 400px; background: url(../img/레드향.jpg) no-repeat; border: none;}

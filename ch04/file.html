@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button input{
+            margin: 10px 20px;
+            /* 패딩은 버튼의 크기를 키워준다. */
+            padding:5px 10px;
+            border:none;
+            /* 버튼에 커서가 닿으면 손모양으로 바뀐다. */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form>
+        <fieldset>
+            <legend>사실은 장기매매 사이트</legend>
+            <p>레드향이 뭔데 장기나 팔아줘 야무지게 잘 써줄게</p>
+            <p>장기 반품신청시 장기 상태를 사진으로 첨부해주세요</p>
+            <hr>
+            <input type="file" name="file">
+        </fieldset>
+        <div class="button">
+            <input type="submit" value="반품신청">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+</html>

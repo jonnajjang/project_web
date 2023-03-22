@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{width: 500px;}
+        legend{color: green; font:bold;}
+        fieldset{margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+    <form>
+        <!-- fieldset은 한 박스로 묶어주는 디자인적 태그..인듯? -->
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요(1과목)</p>    
+            <!-- 선택 태그에 label을 붙여주면 글자를 눌러도 선택처리 된다.
+                label을 붙이지 않으면 체크박스만 선택할 수 있음.(클릭영역이 작음.) -->
+            <label><input type="radio" name="subjeat" value="speaking">회화</label>
+            <label><input type="radio" name="subjeat" value="speaking">자퇴</label>
+            <label><input type="radio" name="subjeat" value="speaking">파괴</label>
+           <input type="checkbox">
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수선택 가능)</p>
+            <label><input type="checkbox" name="mailingl" value="news">해외 단신</label>
+            <label><input type="checkbox" name="mailingl" value="news">해외 반신</label>
+            <label><input type="checkbox" name="mailingl" value="news">해외 전신</label>
+        </fieldset>
+    </form>
+</body>
+</html>

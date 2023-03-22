@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 선택</title>
+    <style>
+        #content{
+            width: 800px;
+            margin: 0 auto;
+        }
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        ul li{list-style: none; margin: 20px;}
+        #major{width: 200px; height: 30;}
+        /* 속성 선택자 [] 각괄호 */
+        button[type="submit"],button[type="reset"]{width: 100px;}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <form action="select.jsp" method="post">
+            <fieldset>
+                <legend>수강신청</legend>
+                <ul>
+                    <li>
+                        <laber for="cid">학과번호</laber>
+                        <input type="text" id="cid" name="cid" value="101" readonly>
+                    </li>
+                    <li>
+                        <laber for="name">이름</laber>
+                        <!-- 커서의 시작 위치 : aytofocus -->
+                        <input type="text" id="name" name="name" autofocus="autofocus">
+                    </li>
+                    <li>
+                        <laber for="name">학과</laber>
+                        <select id="majpr" name="major">
+                            <option>소프트웨어학과</option>
+                            <option>뿌지지직</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <button type="submit">신청하기</button>
+                <button type="reset">취소하기</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
