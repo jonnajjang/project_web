@@ -1,0 +1,7 @@
+#wrap{width: 640px; margin: 0 auto;}
+#check{border:1px solid #ccc;}
+h1{font-size: 16px; color: #fff; background-color: black; margin-top: 0px; padding: 10px;}
+h2{color: red; font-size: 1.5em; text-align: center;}
+p{margin: 0 auto; margin-bottom: 40px;text-align: center;}
+.smalltext{font-size: 0.7em;}
+.accent{color: blue; font-weight: bold;}
