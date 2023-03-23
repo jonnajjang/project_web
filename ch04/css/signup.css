@@ -1,0 +1,18 @@
+#container{width: 600px; margin: 0 auto; }
+h1{text-align:center;}
+form{width: 650px; margin: 0 auto;}
+fieldset{margin: ;}
+ul li{list-style: none; margin: 10px;}
+/* input 필드 정렬. 그냥 float만 하면 실체가 없는 항목들은 정렬이
+    되지 않기 때문에 일부러 가로의 넓이를 만들어준다. */
+li label{width: 120px;
+    float: left;}
+/* 텍스트 필드 스타일 */
+input{width: 250px; height: 30px; }
+/* 드롭다운 메뉴 스타일 */
+select{width: 120px; height: 30px;}
+#button>input{
+    width: 150px;height: 50px;
+}
+#button{width: 400px; margin: 20px auto;}
+#button input:hover{background-color: rgb(170, 110, 110); color: white;}
